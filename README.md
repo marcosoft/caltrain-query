@@ -1,3 +1,5 @@
+__NOTOC__
+
 === What this is ===
 A python Caltrain schedule web page parser and query app.
 
@@ -8,7 +10,7 @@ The app will, upon reading the Caltrain schedule, save a cache file so that subs
 I tested this on Mac OS X running Python 2.7.3. As of Sep 8, 2013 and the app parsed caltrain schedules successfully, but expect it to break in future as Caltrain changes their web page.
 
 === Command Line Usage ===
-
+<pre>
     Usage: caltrain [-fansjz] [-d date] [-t time] [-c coords] [-g address] destination
         -d  Route from given date (uses current otherwise)
         -t  Route from given time (uses current otherwise)
@@ -65,13 +67,13 @@ I tested this on Mac OS X running Python 2.7.3. As of Sep 8, 2013 and the app pa
 
 
     for help use --help
-
+</pre>
 
 === License ===
 Feel free to use for any purpose, with no restrictions, but please keep my copyright notice.
 
 === Example Output: Display Palo Alto Station Schedule ===
-
+<pre>
     $ python caltrain.py 'Palo Alto'
     --------------------------------------------------------------------------------
     Weekday Northbound Schedule
@@ -106,3 +108,4 @@ Feel free to use for any purpose, with no restrictions, but please keep my copyr
     palo alto
         01:03, 09:17, 10:17, 11:17, 12:17, 12:39, 13:17, 14:17, 15:17, 16:17,
         17:17, 18:17, 19:17, 19:39, 20:17, 21:17, 22:17, 23:17
+</pre>
